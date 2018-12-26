@@ -48,3 +48,20 @@ table {
 }
 
 /* End of CSS Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
