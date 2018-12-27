@@ -57,11 +57,20 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    background-color: teal;
+}
+
 p {
     font-size: 1.6rem;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
+    background-color: lightgray;
+    border: 2px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    min-height: 500px;
 }
