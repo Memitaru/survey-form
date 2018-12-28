@@ -9,9 +9,10 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="title">Feedback Form</h1>
+        <div class="top"><h1 id="title">Feedback Form</h1></div>
         <form id="survey-form">
             <p id="description">We'd love to hear your feedback about the event! Please fill out all fields so we can reach out to you to discuss your feedback in more detail if necessary.</p>
+            <div class="form-container">
             <label for="name" id="name-label">Name:</label>
                 <input type="text" id="name" name="name" placeholder="First and Last Name" required>
             <label for="email" id="email-label">Email:</label>
@@ -26,24 +27,28 @@
                     <option value="agender">Agender</option>
                     <option value="other">Other</option>
                 </select>
-            <label for="pronouns">What pronouns should I use for you?</label>
-                <input type="radio" id="pronouns" name="pronouns" value="he">He/him<br>
-                <input type="radio" id="pronouns" name="pronouns" value="she">She/her</br>
-                <input type="radio" id="pronouns" name="pronouns" value="they">They/them<br>
-                <input type="radio" id="pronouns" name="pronouns" value="other">Other (Add to comment at the end)
-            <label for="day">Which days did you attend?</label>
-                <input type="checkbox" id="day" name="day" value="monday">Monday<br>
-                <input type="checkbox" id="day" name="day" value="tuesday">Tuesday<br>
-                <input type="checkbox" id="day" name="day" value="wednesday">Wednesday<br>
-                <input type="checkbox" id="day" name="day" value="thursday">Thursday<br>
-                <input type="checkbox" id="day" name="day" value="friday">Friday
-            <p>Please include your comments below:</p>
-            <textarea name="comments" row="10" column="50">Enter comment here...</textarea>
+            <label for="pronouns">What pronouns should I use for you?</label><br>
+            <div class="pronouns">
+                <div><input type="radio" id="pronouns" name="pronouns" value="he">He/him</div>
+                <div><input type="radio" id="pronouns" name="pronouns" value="she">She/her</div>
+                <div><input type="radio" id="pronouns" name="pronouns" value="they">They/them</div>
+                <div><input type="radio" id="pronouns" name="pronouns" value="other">Other (Add to comment at the end)</div>
+            </div>
+            <label for="day">Which days did you attend?</label><br>
+                <div class="day"><div><input type="checkbox" id="day" name="day" value="monday">Monday</div>
+                <div><input type="checkbox" id="day" name="day" value="tuesday">Tuesday</div>
+                <div><input type="checkbox" id="day" name="day" value="wednesday">Wednesday</div>
+                <div><input type="checkbox" id="day" name="day" value="thursday">Thursday</div>
+                <div><input type="checkbox" id="day" name="day" value="friday">Friday</div>
+            </div>
+            <p class="comment">Please include your comments below:</p>
+            <textarea name="comments" row="10" column="50" placeholder="Enter comments here..."></textarea>
             <input type="submit" id="submit">
+            </div>
         </form>
         
     </div> <!--end of container-->
     <!-- Testing script for freecodecamp. -->
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>  -->
 </body>
 </html>
