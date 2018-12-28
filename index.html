@@ -13,13 +13,13 @@
         <form id="survey-form">
             <p id="description">We'd love to hear your feedback about the event! Please fill out all fields so we can reach out to you to discuss your feedback in more detail if necessary.</p>
             <label for="name" id="name-label">Name:</label>
-                <input type="text" id="name" name="name" required>
-            <label for="email" id="number-label">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="text" id="name" name="name" placeholder="First and Last Name" required>
+            <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Email">
             <label for="age" id="number-label">Age:</label> 
-                <input type="number" id="age" id="number" name="age" required min="0" max="115">
+                <input type="number" id="number" name="age" required min="0" max="115" placeholder="Age">
             <label for="gender">Gender:</label>
-                <select>
+                <select id="dropdown">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="nonbinary">Nonbinary</option>
@@ -39,11 +39,11 @@
                 <input type="checkbox" id="day" name="day" value="friday">Friday
             <p>Please include your comments below:</p>
             <textarea name="comments" row="10" column="50">Enter comment here...</textarea>
-            <input type="submit">
+            <input type="submit" id="submit">
         </form>
         
     </div> <!--end of container-->
     <!-- Testing script for freecodecamp. -->
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>  -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
 </body>
 </html>
